@@ -1,42 +1,45 @@
 body {
     background-color: black;
     color: wheat;
+    font-family: 'Oswald', sans-serif; /* Appliquer la police Oswald au corps */
 }
 
 .header-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #3498db; /* Ajoutez la couleur de fond souhaitée */
-    color: #fff;
-    padding: 20px;
-    backdrop-filter: blur(10px);
-}
 
-.title-logo h1 {
-    margin: 0;
-    font-size: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: linear-gradient(to right, #3498db, #2071a4); /* Dégradé de couleurs */
+        color: #fff;
+        padding: 20px;
+        backdrop-filter: blur(10px);
+        border-radius: 10px; /* Coins arrondis */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre douce */
+        transition: background 0.3s ease; /* Effet de transition sur le fond */
+    }
     
-}
-
-.title-logo span {
-    color: #ffd700; /* Ajoutez la couleur souhaitée pour le span */
-    font-style: italic;
-}
-
-.link-title a {
-    font-size: 1.5rem;
-    color: #fff;
-    text-decoration: none;
-    margin-right: 20px; /* Ajoutez une marge entre les liens si vous le souhaitez */
-    padding: 20px;
-}
+    .header-section:hover {
+        background: linear-gradient(to right, #2071a4, #3498db); /* Dégradé inversé au survol */
+    }
+    
+    .link-title a {
+        font-size: 1.5rem;
+        color: #fff;
+        text-decoration: none;
+        margin-right: 20px;
+        padding: 20px;
+        transition: background 0.3s ease; /* Effet de transition sur le fond au survol */
+    }
+    
+    .link-title a:hover {
+        background-color: rgba(255, 255, 255, 0.1); /* Fond légèrement plus clair au survol */
+    }
 
 .img-main {
     display: block;
     width: 100%;
-    max-width: 100%; /* Ajoutez cette ligne pour assurer la flexibilité */
-    height: 50%;   /* Ajoutez cette ligne pour maintenir le ratio hauteur/largeur */
+    max-width: 100%;
+    height: 50%;
     position: relative;
 }
 
@@ -46,6 +49,6 @@ body {
     top: 20%;
     left: 20%;
     transform: translate(-50%, -50%);
-    color: #fff; /* Ajoutez la couleur de texte souhaitée */
-    text-align: center; /* Alignez le texte au centre */
+    color: #fff;
+    text-align: center;
 }
