@@ -1,0 +1,51 @@
+body {
+    background-color: black;
+    color: wheat;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3498db; /* Ajoutez la couleur de fond souhaitée */
+    color: #fff;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.title-logo h1 {
+    margin: 0;
+    font-size: 2rem;
+    
+}
+
+.title-logo span {
+    color: #ffd700; /* Ajoutez la couleur souhaitée pour le span */
+    font-style: italic;
+}
+
+.link-title a {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px; /* Ajoutez une marge entre les liens si vous le souhaitez */
+    padding: 20px;
+}
+
+.img-main {
+    display: block;
+    width: 100%;
+    max-width: 100%; /* Ajoutez cette ligne pour assurer la flexibilité */
+    height: 50%;   /* Ajoutez cette ligne pour maintenir le ratio hauteur/largeur */
+    position: relative;
+}
+
+.title-main {
+    font-size: 5rem;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* Ajoutez la couleur de texte souhaitée */
+    text-align: center; /* Alignez le texte au centre */
+}
