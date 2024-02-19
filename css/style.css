@@ -31,12 +31,12 @@ body {
         text-decoration: none;
         margin-right: 20px;
         padding: 20px;
-        transition: background 0.3s ease; /* Effet de transition sur le fond au survol */
-    }
+        transition: all 0.3s ease-out;    }
     
     .link-title a:hover {
+        background-color: burlywood;
         border-radius: 30px 30px 30px 30px;
-        color: burlywood;
+        color: #fff;
     }
 
     .input-title{
@@ -57,20 +57,20 @@ body {
 
     #search-btn {
         background-color: transparent; /* Fond transparent */
-        border: 1px solid #fff; /* Couleur de la bordure */
-        border-radius: 5px;
+        border: 1px #fff; /* Couleur de la bordure */
+        border-radius: 30px 30px 30px 30px;
         cursor: pointer;
         color: #fff; /* Couleur du texte */
-        transition: background-color 0.3s ease, color 0.3s ease; /* Transition en douceur des couleurs */
-        padding: 10px;
+        transition: all 0.3s ease-out;      
+          padding: 10px;
         display: flex;
         align-items: center;
         margin-left: 10px;
 
     }
     #search-btn:hover {
-        background-color: #fff;
-        color: black    ;
+        background-color: burlywood;
+        color: #fff;
     }
 
 
