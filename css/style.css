@@ -1,9 +1,18 @@
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
     background-color: black;
     color: wheat;
     font-family: 'Oswald', sans-serif; /* Appliquer la police Oswald au corps */
     background-image: url('/img/baleine-bosse-sautant-au-dessus-mer-ai-generative.jpg'); /* Remplacez par le chemin réel vers votre image */
     background-size: cover;
+    min-height: 100vh; /* Hauteur minimale de la fenêtre visible (viewport height) */
+    
 }
 
 
@@ -23,8 +32,33 @@ body {
   
   /* Ajoutez d'autres styles au besoin pour les classes title-logo, link-title, input-title, button-connexion */
   
+  .title-logo {
+    text-align: center;
+}
 
-    
+.title-logo h1 {
+    color: #ffffff; /* Couleur du texte en blanc */
+    font: 700 2em 'Roboto', sans-serif;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.title-logo p {
+    font-size: 0.8em; /* Taille de la police plus petite */
+    color: #ffffff; /* Couleur du texte en blanc */
+    margin-top: 8px; /* Marge en haut pour l'espace */
+}
+
+.title-logo::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #242f49; /* Couleur de la ligne en blanc */
+    margin: 8px auto 0;
+}
+
+ 
     .link-title a {
         font-size: 1.5rem;
         color: #fff;
@@ -34,7 +68,7 @@ body {
         transition: all 0.3s ease-out;    }
     
     .link-title a:hover {
-        background-color: burlywood;
+        background-color: #242f49;
         border-radius: 30px 30px 30px 30px;
         color: #fff;
     }
@@ -69,7 +103,7 @@ body {
 
     }
     #search-btn:hover {
-        background-color: burlywood;
+        background-color: #242f49;
         color: #fff;
     }
 
@@ -83,11 +117,48 @@ body {
 }
 
 .title-main {
-    font-size: 5rem;
-    position: absolute;
-    top: 20%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-    color: #fff;
     text-align: center;
+    color: #242f49; /* Couleur du texte en bleu */
+    font-family: 'Roboto', sans-serif; /* Police de caractères */
+    font-size: 5rem; /* Taille de la police */
+    font-weight: bold; /* Gras */
+    margin: 5rem 0; /* Marge en haut et en bas pour l'espace */
+    ;
+}
+
+.title-main i {
+    font-style: italic; /* Style italique pour le contenu de la balise <i> */
+    color: #fff; /* Couleur rouge pour le texte italique */
+}
+
+.title-main::before,
+.title-main::after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background-color: #242f49; /* Couleur de la ligne en bleu */
+    vertical-align: middle;
+    margin: 0 10px; /* Marge à gauche et à droite pour l'espace entre la ligne et le texte */
+}
+
+.main-section {
+    flex-grow: 1; /* Faire en sorte que cette section occupe tout l'espace disponible */
+}
+
+.div-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top: auto;
+}
+
+.myDiv {
+    width: 25%;
+    height: 25rem; /* Ajuster la hauteur selon vos besoins */
+    background-color: lightblue;
+    margin: 10px;
+    text-align: center;
+    line-height: 150px; /* Pour centrer le texte verticalement */
 }
