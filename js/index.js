@@ -26,33 +26,33 @@ document.addEventListener("DOMContentLoaded",function() {
     const contenuDivs = [
     {
 
-        image :"/img/Océan pacifique.jpg",
+        image :"../img/ocean Pacifique.jpg",
         text : "Pacifique en Profondeur : Découvertes et Mystères des Grands Horizons Marins",
         lien :"https://fr.wikipedia.org/wiki/Portail:Oc%C3%A9an_Pacifique#:~:text=L'oc%C3%A9an%20Pacifique%2C%20qui%20s,'Asie%20(Japon%2C%20Philippines."
     },
     {
-        image :"/img/Océan atlantique.jpg",
+        image :"../img/ocean atlantique.jpg",
         text : "Atlantique Infinité : Un Voyage à Travers les Flots et les Énigmes de l'Atlantique",
         lien :"https://fr.wikipedia.org/wiki/Oc%C3%A9an_Atlantique"
     },
     {
-        image :"/img/Océan indien.jpg",
+        image :"../img/ocean indien.jpg",
         text : "L'Indien Envoûtant : Révélations sur les Perles Exotiques de l'Océan Indien",
         lien :"https://fr.wikipedia.org/wiki/Oc%C3%A9an_Indien"
     },
     {
-        image :"/img/Océan Antractique.jpg",
+        image :"../img/ocean Antractique.jpg",
         text : "L'Antarctique Abyssal : Secrets des Profondeurs Glaciales de l'Océan Austral",
         lien :"https://fr.wikipedia.org/wiki/Oc%C3%A9an_Austral"
     },
     {
-        image :"/img/Ocean Artique.jpg",
+        image :"../img/ocean Artique (2).jpg",
         text : "L'Arctique Énigmatique : Explorations dans les Eaux Gelées du Grand Nord",
         lien :"https://fr.wikipedia.org/wiki/Oc%C3%A9an_Arctique"
     },
     {
 
-        image :"/img/Mer Méditerranée.jpg",
+        image :"../img/Mer Medeteranée.jpg",
         text : "Méditerranée: Un Berceau de Civilisations et un Écosystème Unique à Découvrir",
         lien :"https://fr.wikipedia.org/wiki/Mer_M%C3%A9diterran%C3%A9e"
     },

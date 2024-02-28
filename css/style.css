@@ -147,3 +147,21 @@ body {
 }
 
 
+@media only screen and (max-width: 600px) {
+    /* Exemple de styles pour les petits écrans */
+    header {
+        margin: 2rem auto;
+        padding: 20px;
+    }
+  
+    img {
+        border-radius: 10px; /* Réduire le rayon de la bordure pour les petits écrans */
+    }
+  
+    .preparation-time {
+        margin-left: 20px; /* Ajuster la marge pour les petits écrans */
+    }
+  
+    /* Ajoutez d'autres styles spécifiques pour les petits écrans au besoin */
+  }
+
