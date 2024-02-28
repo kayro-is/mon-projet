@@ -1,0 +1,117 @@
+html, body {
+    height: 100%;
+    background-color: black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: wheat;
+    font-family: 'Oswald', sans-serif; /* Appliquer la police Oswald au corps */
+    background-image: url('../img/Fich.jpg'); /* Remplacez par le chemin réel vers votre image */
+    background-size: cover;
+    min-height: 100vh; /* Hauteur minimale de la fenêtre visible (viewport height) */
+    
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 5px 20px 5px 20px;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+    backdrop-filter: blur(20px);
+  }
+  
+  /* Ajoutez d'autres styles au besoin pour les classes title-logo, link-title, input-title, button-connexion */
+  
+  .title-logo {
+    text-align: center;
+}
+
+.title-logo h1 {
+    color: #ffffff; /* Couleur du texte en blanc */
+    font: 700 2em 'Roboto', sans-serif;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.title-logo p {
+    font-size: 0.8em; /* Taille de la police plus petite */
+    color: #ffffff; /* Couleur du texte en blanc */
+    margin-top: 8px; /* Marge en haut pour l'espace */
+}
+
+.title-logo::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #242f49; /* Couleur de la ligne en blanc */
+    margin: 8px auto 0;
+}
+
+ 
+    .link-title a {
+        font-size: 1.5rem;
+        color: #fff;
+        text-decoration: none;
+        margin-right: 20px;
+        padding: 20px;
+        transition: all 0.3s ease-out;    }
+    
+    .link-title a:hover {
+        background-color: #fff;
+        border-radius: 30px 30px 30px 30px;
+        color: #242f49;
+    }
+
+    .input-title{
+     display: flex;
+     align-items: center;
+    }
+
+    #site-search {
+        background-color: transparent; /* Fond transparent */
+        color: #fff;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-right: 10px; /* Ajuste la position par rapport au bouton */
+      width: 200px; /* Ajuste la largeur selon tes besoins */
+
+    }
+
+    #search-btn {
+        background-color: transparent; /* Fond transparent */
+        border: 1px #242f49; /* Couleur de la bordure */
+        border-radius: 30px 30px 30px 30px;
+        cursor: pointer;
+        color: #fff; /* Couleur du texte */
+        transition: all 0.3s ease-out;      
+          padding: 10px;
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+
+    }
+    #search-btn:hover {
+        background-color: #fff;
+        color: #242f49;
+        padding: 20px;
+    }
+
+    .marine-title {
+        text-align: start;
+        color: #fff; /* Couleur du texte en bleu */
+        font-family: 'Roboto', sans-serif; /* Police de caractères */
+        font-size: 1.5rem; /* Taille de la police */
+        font-weight: bold; /* Gras */
+        margin: 3rem 0; /* Marge en haut et en bas pour l'espace */;
+        margin-left: 20px;
+    }
