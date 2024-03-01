@@ -9,9 +9,9 @@ body {
     background-color: black;
     color: wheat;
     font-family: 'Oswald', sans-serif; /* Appliquer la police Oswald au corps */
-    background-image: url('../img/Fich.jpg'); /* Remplacez par le chemin réel vers votre image */
+    background-image: url('../img/fondMarine.jpg'); /* Remplacez par le chemin réel vers votre image */
     background-size: cover;
-    min-height: 100vh; /* Hauteur minimale de la fenêtre visible (viewport height) */
+    min-height: 200vh; /* Hauteur minimale de la fenêtre visible (viewport height) */
     
 }
 
@@ -106,12 +106,66 @@ body {
         padding: 20px;
     }
 
+
+/* Articles */
     .marine-title {
-        text-align: start;
+        text-align: center;;
         color: #fff; /* Couleur du texte en bleu */
         font-family: 'Roboto', sans-serif; /* Police de caractères */
         font-size: 1.5rem; /* Taille de la police */
         font-weight: bold; /* Gras */
         margin: 3rem 0; /* Marge en haut et en bas pour l'espace */;
         margin-left: 20px;
+        
+       
     }
+
+/* Articles */
+.first-article, .second-article, .third-article, .fourth-article {
+    display: flex;
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+img {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 30%;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 20px; /* Ajoute une marge entre l'image et le texte */
+}
+
+/* Le texte à droite de l'image */
+.first-article p, .second-article p, .third-article p, .fourth-article p {
+    overflow: hidden; /* Pour résoudre les problèmes de collapse de float */
+}
+
+/* Résumé Article */
+.resumé-Article {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+/* Liens dans le résumé */
+.resumé-Article a {
+    color: #2ecc71;
+    text-decoration: none;
+}
+
+/* Responsive Design - Ajustements pour les petits écrans */
+@media screen and (max-width: 600px) {
+    .header-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .link-title {
+        margin-top: 10px;
+    }
+}
