@@ -11,7 +11,7 @@ body {
     font-family: 'Oswald', sans-serif; /* Appliquer la police Oswald au corps */
     background-image: url('../img/fondMarine.jpg'); /* Remplacez par le chemin réel vers votre image */
     background-size: cover;
-    min-height: 200vh; /* Hauteur minimale de la fenêtre visible (viewport height) */
+    min-height: 230vh; /* Hauteur minimale de la fenêtre visible (viewport height) */
     
 }
 
@@ -112,7 +112,7 @@ body {
         text-align: center;;
         color: #fff; /* Couleur du texte en bleu */
         font-family: 'Roboto', sans-serif; /* Police de caractères */
-        font-size: 1.5rem; /* Taille de la police */
+        font-size: 2rem; /* Taille de la police */
         font-weight: bold; /* Gras */
         margin: 3rem 0; /* Marge en haut et en bas pour l'espace */;
         margin-left: 20px;
@@ -120,10 +120,43 @@ body {
        
     }
 
+    main {
+        color: #fff;
+    }
+
+    main h2 {
+       font-size: 2.5rem;
+       text-align: center;
+       text-decoration: underline;
+    }
+
+    main a {
+        display: flex;
+        text-decoration: none;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px; 
+        transition: all 0.3s ease-out;   
+        justify-content:center ;
+        max-width: 20%;
+    }
+
+    main a:hover {
+        background-color: #fff;
+        color: #242f49;
+        padding: 20px;
+    }
+
 /* Articles */
-.first-article, .second-article, .third-article, .fourth-article {
+.first-article,
+ .second-article, 
+ .third-article, 
+ .fourth-article {
     display: flex;
-    background-color: #fff;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    border: 2px solid ;
     margin: 20px;
     padding: 20px;
     border-radius: 5px;
@@ -134,22 +167,34 @@ img {
     justify-content: flex-start;
     max-width: 30%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 30px;
     margin-right: 20px; /* Ajoute une marge entre l'image et le texte */
 }
 
 /* Le texte à droite de l'image */
-.first-article p, .second-article p, .third-article p, .fourth-article p {
-    overflow: hidden; /* Pour résoudre les problèmes de collapse de float */
+.first-article p, 
+.second-article p, 
+.third-article p, 
+.fourth-article p {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.8rem; /* Pour résoudre les problèmes de collapse de float */
 }
 
 /* Résumé Article */
 .resumé-Article {
     background-color: #3498db;
+    font-size: 1.5rem;
     color: #fff;
     padding: 20px;
     border-radius: 5px;
+    margin-top: 20px;
     margin: 20px;
+    text-align: center;
+}
+
+.resumé-Article h1 {
+    text-align: center;
 }
 
 /* Liens dans le résumé */
